@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solidworks CAD Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px 20px 20px;
+            background-color: rgba(22, 6, 6, 0.7);
+            border: 2px solid goldenrod;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow-y: auto; /* Make the container scrollable */
+            max-height: 40vh; /* Limit container height to viewport height minus header and footer heights and some padding */
+            position: relative; /* Required for pseudo-elements */
+        }
+        .container::before, .container::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            background-color: rgba(0, 0, 0, 0.1);
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        .container::before {
+            left: 0;
+        }
+        .container::after {
+            right: 0;
+        }
+        .container::-webkit-scrollbar { /* WebKit */
+            width: 5px;
+            height: 5px; /* Set height to hide default scrollbar on the right */
+        }
+        .container::-webkit-scrollbar-track {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .container::-webkit-scrollbar-thumb {
+            background-color: goldenrod; /* Change thumb color to goldenrod */
+            border-radius: 6px;
+            border: 3px solid rgba(0, 0, 0, 0);
+        }
+        .container::-webkit-scrollbar-thumb:hover {
+            background-color: darkred; /* Change hover color to a darker shade of goldenrod */
+        }
+        .container::-webkit-scrollbar-track-piece {
+            background-color: transparent; /* Hide scrollbar track on the left */
+        }
+        .portfolio-item {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        .portfolio-item:last-child {
+            border-bottom: none;
+        }
+        .portfolio-item h2 {
+            margin-top: 0;
+        }
+        .portfolio-item button {
+            background-color: rgba(61, 61, 29, 0.89);
+            color: #fff;
+            border: 2px solid gold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .portfolio-item button:hover {
+            background: transparent;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Solidworks CAD Models</h1>
+    </header>
+    <div class="container">
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/ballBearing.html'" target="/blank">Model 1: Ball Bearing</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/flangeCoupling.html'" target="/blank">Model 2: Flange Coupling</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/hingeAssembly.html'" target="/blank">Model 3: Hinge Assembly</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/RoboticArm.html'" target="/blank">Model 4: Robotic Arm</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/ScrewScissorLiftMechanism.html'" target="/blank">Model 5: Screw Scissor Lift Mechanism</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/universalJoint.html'" target="/blank">Model 6: Universal Joint</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/1.html'" target="/blank">Model 7</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/2.html'" target="/blank">Model 8</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/3.html'" target="/blank">Model 9</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/4.html'" target="/blank">Model 10</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/5.html'" target="/blank">Model 11</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/6.html'" target="/blank">Model 12</button></h2>
+        </div>
+        <div class="portfolio-item">
+            <h2><button onclick="window.location.href='/links/7.html'" target="/blank">Model 13</button></h2>
+        </div>
+        
+        <!-- Add more portfolio items here -->
+    </div>
+    <footer>
+        <p>Developed by Syed Hassanul Haque</p
